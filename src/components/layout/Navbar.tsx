@@ -66,14 +66,24 @@ export const Navbar: React.FC = () => {
     setActiveSection(item.id);
     setMobileMenuOpen(false);
 
-    if (item.href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const target = document.querySelector(item.href);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
+    // Delay scroll slightly so the mobile menu collapse doesn't cancel smooth scroll
+    setTimeout(() => {
+      if (item.href === "#") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const target = document.querySelector(item.href);
+        if (target) {
+          const navbarHeight = 80; // Compensates for the fixed header
+          const targetPosition =
+            target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        }
       }
-    }
+    }, 150);
   };
 
   return (

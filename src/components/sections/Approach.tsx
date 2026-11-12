@@ -70,7 +70,7 @@ export const Approach: React.FC = () => {
   }, []);
 
   return (
-    <section id="approach" className="py-20 lg:py-28 bg-[#f8fbfe] relative overflow-hidden">
+    <section id="approach" className="py-10 lg:py-14 bg-[#f8fbfe] relative overflow-hidden">
       {/* Background radial accent glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[550px] bg-[#00876F]/5 blur-[150px] rounded-full pointer-events-none" />
 

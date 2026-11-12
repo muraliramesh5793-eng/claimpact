@@ -43,7 +43,7 @@ const FEATURE_CARDS: FeatureCard[] = [
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-white overflow-hidden">
+    <section id="about" className="py-10 lg:py-14 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           

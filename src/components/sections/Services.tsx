@@ -56,7 +56,7 @@ const SERVICES: ServiceItem[] = [
 
 export const Services: React.FC = () => {
   return (
-    <section id="services" className="py-16 bg-[#f8fbfe] relative overflow-hidden">
+    <section id="services" className="py-10 bg-[#f8fbfe] relative overflow-hidden">
       {/* Ambient background glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[#00876F]/5 blur-[140px] rounded-full pointer-events-none" />
 

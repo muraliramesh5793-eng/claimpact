@@ -72,7 +72,7 @@ export const WhyChooseUs: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number>(0);
 
   return (
-    <section id="why-us" className="pt-14 lg:pt-18 bg-white relative overflow-hidden">
+    <section id="why-us" className="pt-10 lg:pt-14 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
